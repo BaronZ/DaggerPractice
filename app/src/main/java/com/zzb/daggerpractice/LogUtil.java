@@ -9,6 +9,6 @@ import android.util.Log;
 public class LogUtil {
 
     public static void daggerLog(Object obj, String msg) {
-        Log.d("dagger", msg + "@" + obj);
+        Log.d("dagger_log", msg + "@" + obj);
     }
 }

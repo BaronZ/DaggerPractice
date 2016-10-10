@@ -9,7 +9,7 @@ import com.zzb.daggerpractice.LogUtil;
 public class LiveModel {
 
     public LiveModel() {
-        LogUtil.daggerLog(this, "liveModel");
+        LogUtil.daggerLog(this, "LiveModel");
     }
 
     public void getLiveDataFromNet() {

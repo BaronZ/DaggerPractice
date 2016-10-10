@@ -1,5 +1,7 @@
 package com.zzb.daggerpractice.live;
 
+import com.zzb.daggerpractice.LogUtil;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -13,6 +15,7 @@ public class LiveModule {
     private LiveView mLiveView;
 
     public LiveModule(LiveView liveView) {
+        LogUtil.daggerLog(this, "LiveModule");
         mLiveView = liveView;
     }
 
