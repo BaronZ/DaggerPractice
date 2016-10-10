@@ -1,6 +1,6 @@
 package com.zzb.daggerpractice.coffee;
 
-import android.util.Log;
+import javax.inject.Inject;
 
 /**
  * Created by ZZB on 2016/10/10.
@@ -8,9 +8,15 @@ import android.util.Log;
 
 public class SimpleCoffeeMaker implements CoffeeMaker {
     private static final String TAG = "SimpleCoffeeMaker";
+    private String createTime;
+
+    @Inject
+    public SimpleCoffeeMaker(String createTime) {
+        this.createTime = createTime;
+    }
 
     @Override
     public void make() {
-        Log.d(TAG, "simple make coffee");
+        System.out.println("simple make coffee");
     }
 }
