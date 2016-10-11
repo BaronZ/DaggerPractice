@@ -21,10 +21,7 @@ public class EmptyComponentTest {
         DaggerEmptyComponent.builder().build().inject(this);
     }
 
-//    @Test
-//    public void test() {
-//        mCoffeeMachine.makeCoffee();
-//    }
+
 
     @Test
     public void test1() {
