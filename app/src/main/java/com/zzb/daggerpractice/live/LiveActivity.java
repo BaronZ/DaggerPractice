@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.zzb.daggerpractice.R;
+import com.zzb.daggerpractice.live.di.DaggerLiveComponent;
+import com.zzb.daggerpractice.live.di.LiveModule;
 
 import javax.inject.Inject;
 
-public class LiveActivity extends AppCompatActivity implements LiveView{
+public class LiveActivity extends AppCompatActivity implements LiveView {
 
     @Inject
     LivePresenter mLivePresenter;
@@ -18,8 +20,8 @@ public class LiveActivity extends AppCompatActivity implements LiveView{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live);
 
+//        DaggerLiveComponent.builder().liveModule(new LiveModule(this)).build().inject(this);
         DaggerLiveComponent.builder().liveModule(new LiveModule(this)).build().inject(this);
-
         mLivePresenter.getLiveShowData();
 
     }

@@ -1,4 +1,7 @@
-package com.zzb.daggerpractice.live;
+package com.zzb.daggerpractice.live.di;
+
+import com.zzb.daggerpractice.live.LiveActivity;
+import com.zzb.daggerpractice.live.LiveModel;
 
 import javax.inject.Singleton;
 
@@ -12,4 +15,6 @@ import dagger.Component;
 public interface LiveComponent {
 
     void inject(LiveActivity liveActivity);
+
+    LiveModel provideLiveModel();
 }

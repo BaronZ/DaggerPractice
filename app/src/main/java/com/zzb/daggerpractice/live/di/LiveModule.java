@@ -1,6 +1,9 @@
-package com.zzb.daggerpractice.live;
+package com.zzb.daggerpractice.live.di;
 
 import com.zzb.daggerpractice.LogUtil;
+import com.zzb.daggerpractice.live.LiveModel;
+import com.zzb.daggerpractice.live.LivePresenter;
+import com.zzb.daggerpractice.live.LiveView;
 
 import javax.inject.Singleton;
 
